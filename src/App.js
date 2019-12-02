@@ -3,7 +3,8 @@ import './App.css';
 
 class App extends Component {
   render() {
-    var welcome_message = "Welcome to the road of learn React! Project: hackernews";
+    const welcome_message = 'Welcome to the road of learn React! Project: hackernews';
+    //welcome_message = 'text'
     return (
       <div className="App">
         <h2>{welcome_message}</h2>
