@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+const title = (<h2>Takeda</h2>)
+
 const list = [
   {
     title: 'React',
@@ -29,12 +31,6 @@ class App extends Component {
     this.state = {
       list: list,
     }
-    this.onDismiss = this.onDismiss.bind(this)
-  }
-
-  onDismiss(id) {
-    const updatedList = this.state.list.filter(item => item.objectID !== id);
-    this.setState({list: updatedList})
   }
 
   render() {

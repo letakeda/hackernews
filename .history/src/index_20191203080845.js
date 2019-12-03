@@ -4,7 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const title = (<h1>Takeda</h1>)
+
+ReactDOM.render(<App />, title, document.getElementById('root'));
 
 if(module.hot) {
     module.hot.accept();

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+const title = (<h2>Takeda</h2>)
+
 const list = [
   {
     title: 'React',
@@ -33,9 +35,12 @@ class App extends Component {
   }
 
   onDismiss(id) {
-    const updatedList = this.state.list.filter(item => item.objectID !== id);
-    this.setState({list: updatedList})
+    const updatedList = this.state.list.filter(function isNotId(item) { 
+      return item.objectID !== id;
+    });
   }
+
+  const updatedList = this.state.list.filter(isNotId)
 
   render() {
     //const welcome_message = 'Welcome to the road of learn React!';
